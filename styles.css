@@ -1,0 +1,12 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 50px 35%;
+}
+
+.cell {
+    flex-basis: 6.25%;
+    height: 30px;
+   
+}
