@@ -13,8 +13,9 @@ function createGrid(n){
             newDiv.style.height = divSize+'px';
             main.appendChild(newDiv);
             newDiv.addEventListener("mouseover", function (e) {
-                
-                e.target.style.background = "blue";
+                let newColor = "rgb("+randomColor()+")";
+                e.target.style.background = newColor;
+                e.target.style.opacity = Number(e.target.style.opacity) + 0.1;
             });
         }
     }
@@ -23,7 +24,7 @@ function randomColor(){
     let r = Math.floor(Math.random()*255);
     let g = Math.floor(Math.random()*255);
     let b = Math.floor(Math.random()*255);
-
+    return (r+" "+g+" "+b+" ");
 }
 
 }
