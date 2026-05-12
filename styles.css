@@ -12,11 +12,6 @@
    
 }
 
-#btnContainer {
-    dispaly: flex;
-    gap: 10px;
-}
-
 body {
     margin: 10px;
     display: flex;
